@@ -1,14 +1,15 @@
 const express = require('express')
 const router = express.Router()
 const Post = require('../models/Post')
+const PostController = require('../controllers/PostController')
 
 
-router.get('/', )
+router.get('/', PostController.getPosts )
 
 
-router.post('/', )
+router.post('/', PostController.createPost )
 
-router.delete('/:id', )
+router.delete('/:id', PostController.deletePost )
 
 
 
